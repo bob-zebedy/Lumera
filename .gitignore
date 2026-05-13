@@ -22,3 +22,4 @@ Pods/
 # Misc
 *.swp
 *.log
+.build_counter

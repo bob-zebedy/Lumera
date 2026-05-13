@@ -304,6 +304,7 @@
 			inputFileListPaths = (
 			);
 			inputPaths = (
+				"$(TARGET_BUILD_DIR)/$(INFOPLIST_PATH)",
 			);
 			name = "Set Build Number from git";
 			outputFileListPaths = (
@@ -312,7 +313,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "set -e\nCOUNT=$(cd \"$SRCROOT\" && git rev-list --count HEAD 2>/dev/null || echo 1)\nPLIST=\"${TARGET_BUILD_DIR}/${INFOPLIST_PATH}\"\n/usr/libexec/PlistBuddy -c \"Set :CFBundleVersion ${COUNT}\" \"$PLIST\"\necho \"note: CFBundleVersion set to ${COUNT} (git commit count)\"\n";
+			shellScript = "set -e\ncd \"$SRCROOT\"\nSHA=$(git rev-parse --short HEAD 2>/dev/null || echo dev)\nTODAY=$(date +%Y%m%d)\nCOUNTER_FILE=\"$SRCROOT/.build_counter\"\nLAST_DATE=\"\"\nLAST_SEQ=0\nif [ -f \"$COUNTER_FILE\" ]; then\n    LAST_DATE=$(sed -n '1p' \"$COUNTER_FILE\")\n    LAST_SEQ=$(sed -n '2p' \"$COUNTER_FILE\")\nfi\nif [ \"$LAST_DATE\" = \"$TODAY\" ]; then\n    SEQ=$((LAST_SEQ + 1))\nelse\n    SEQ=1\nfi\nBUILD_VERSION=\"${TODAY}.${SEQ}\"\nprintf '%s\\n%s\\n' \"$TODAY\" \"$SEQ\" > \"$COUNTER_FILE\"\nPLIST=\"${TARGET_BUILD_DIR}/${INFOPLIST_PATH}\"\n/usr/libexec/PlistBuddy -c \"Set :CFBundleVersion ${BUILD_VERSION}\" \"$PLIST\"\n/usr/libexec/PlistBuddy -c \"Set :GitCommitSHA ${SHA}\" \"$PLIST\" 2>/dev/null || /usr/libexec/PlistBuddy -c \"Add :GitCommitSHA string ${SHA}\" \"$PLIST\"\necho \"note: CFBundleVersion=${BUILD_VERSION} GitCommitSHA=${SHA}\"\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 

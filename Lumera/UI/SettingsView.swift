@@ -8,6 +8,9 @@ extension Bundle {
     var appBuild: String {
         infoDictionary?["CFBundleVersion"] as? String ?? "—"
     }
+    var gitCommitSHA: String {
+        infoDictionary?["GitCommitSHA"] as? String ?? "—"
+    }
 }
 
 struct SettingsView: View {
@@ -106,7 +109,7 @@ struct SettingsView: View {
 
                 Section("About") {
                     LabeledContent("Version", value: Bundle.main.appVersion)
-                    LabeledContent("Build Version", value: Bundle.main.appBuild)
+                    LabeledContent("Build Version", value: Bundle.main.gitCommitSHA)
                     if let privacyURL = URL(string: Self.privacyPolicyURL) {
                         Link(destination: privacyURL) {
                             HStack {
