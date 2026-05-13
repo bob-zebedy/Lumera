@@ -1,0 +1,574 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		E0000000000000000000E001 /* LumeraApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0000000000000000000D001 /* LumeraApp.swift */; };
+		E0000000000000000000E002 /* CaptureService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0000000000000000000D002 /* CaptureService.swift */; };
+		E0000000000000000000E003 /* DeviceLookup.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0000000000000000000D003 /* DeviceLookup.swift */; };
+		E0000000000000000000E004 /* Lens.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0000000000000000000D004 /* Lens.swift */; };
+		E0000000000000000000E005 /* PhotoCapture.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0000000000000000000D005 /* PhotoCapture.swift */; };
+		E0000000000000000000E006 /* PhotoCaptureProcessor.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0000000000000000000D006 /* PhotoCaptureProcessor.swift */; };
+		E0000000000000000000E007 /* ManualControls.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0000000000000000000D007 /* ManualControls.swift */; };
+		E0000000000000000000E008 /* PhotoLibrary.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0000000000000000000D008 /* PhotoLibrary.swift */; };
+		E0000000000000000000E009 /* CameraError.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0000000000000000000D009 /* CameraError.swift */; };
+		E0000000000000000000E00A /* PreviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0000000000000000000D00A /* PreviewView.swift */; };
+		E0000000000000000000E00B /* CameraPreview.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0000000000000000000D00B /* CameraPreview.swift */; };
+		E0000000000000000000E00C /* CameraModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0000000000000000000D00C /* CameraModel.swift */; };
+		E0000000000000000000E00D /* CameraView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0000000000000000000D00D /* CameraView.swift */; };
+		E0000000000000000000E00E /* LensSelectorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0000000000000000000D00E /* LensSelectorView.swift */; };
+		E0000000000000000000E00F /* ManualControlPanel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0000000000000000000D00F /* ManualControlPanel.swift */; };
+		E0000000000000000000E010 /* ManualControlSlider.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0000000000000000000D010 /* ManualControlSlider.swift */; };
+		E0000000000000000000E011 /* FormatToggleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0000000000000000000D011 /* FormatToggleView.swift */; };
+		E0000000000000000000E012 /* ShutterButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0000000000000000000D012 /* ShutterButton.swift */; };
+		E0000000000000000000E013 /* FocusReticle.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0000000000000000000D013 /* FocusReticle.swift */; };
+		E0000000000000000000E014 /* ThumbnailPreview.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0000000000000000000D014 /* ThumbnailPreview.swift */; };
+		E0000000000000000000E015 /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0000000000000000000D015 /* Settings.swift */; };
+		E0000000000000000000E016 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0000000000000000000D016 /* SettingsView.swift */; };
+		E0000000000000000000E017 /* GridOverlayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0000000000000000000D017 /* GridOverlayView.swift */; };
+		E0000000000000000000E018 /* LocationProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0000000000000000000D018 /* LocationProvider.swift */; };
+		E0000000000000000000E01C /* ZoomableImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0000000000000000000D01C /* ZoomableImageView.swift */; };
+		E0000000000000000000E01D /* FlashButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0000000000000000000D01D /* FlashButton.swift */; };
+		E0000000000000000000E01E /* PhotoPreviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0000000000000000000D01E /* PhotoPreviewView.swift */; };
+		E0000000000000000000E01F /* View+GlassEffect.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0000000000000000000D01F /* View+GlassEffect.swift */; };
+		E0000000000000000000E020 /* CoachMarkOverlay.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0000000000000000000D020 /* CoachMarkOverlay.swift */; };
+		E0000000000000000000E021 /* HDRButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0000000000000000000D021 /* HDRButton.swift */; };
+		E0000000000000000000E022 /* DetectedObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0000000000000000000D022 /* DetectedObject.swift */; };
+		E0000000000000000000E023 /* MetadataHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0000000000000000000D023 /* MetadataHandler.swift */; };
+		E0000000000000000000E024 /* DetectionOverlayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0000000000000000000D024 /* DetectionOverlayView.swift */; };
+		E0000000000000000000E025 /* CameraView+Coach.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0000000000000000000D025 /* CameraView+Coach.swift */; };
+		E0000000000000000000E026 /* CameraView+Controls.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0000000000000000000D026 /* CameraView+Controls.swift */; };
+		E0000000000000000000E027 /* CameraView+Layout.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0000000000000000000D027 /* CameraView+Layout.swift */; };
+		E0000000000000000000E028 /* CameraView+Subviews.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0000000000000000000D028 /* CameraView+Subviews.swift */; };
+		E0000000000000000000E029 /* CaptureFlyInOverlay.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0000000000000000000D029 /* CaptureFlyInOverlay.swift */; };
+		E0000000000000000000E02A /* AspectRatio.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0000000000000000000D02A /* AspectRatio.swift */; };
+		E0000000000000000000E02B /* AspectRatioButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0000000000000000000D02B /* AspectRatioButton.swift */; };
+		E0000000000000000000E02C /* AspectRatioMaskView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0000000000000000000D02C /* AspectRatioMaskView.swift */; };
+		F0000000000000000000F001 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A0000000000000000000A00B /* Assets.xcassets */; };
+		F0000000000000000000F002 /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = A0000000000000000000A00D /* Localizable.xcstrings */; };
+		F0000000000000000000F003 /* InfoPlist.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = A0000000000000000000A00E /* InfoPlist.xcstrings */; };
+		F0000000000000000000F004 /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = A0000000000000000000A00F /* PrivacyInfo.xcprivacy */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		A0000000000000000000A00B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A0000000000000000000A00C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A0000000000000000000A00D /* Localizable.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = Localizable.xcstrings; sourceTree = "<group>"; };
+		A0000000000000000000A00E /* InfoPlist.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = InfoPlist.xcstrings; sourceTree = "<group>"; };
+		A0000000000000000000A00F /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
+		C0000000000000000000C008 /* Lumera.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Lumera.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D0000000000000000000D001 /* LumeraApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LumeraApp.swift; sourceTree = "<group>"; };
+		D0000000000000000000D002 /* CaptureService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaptureService.swift; sourceTree = "<group>"; };
+		D0000000000000000000D003 /* DeviceLookup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceLookup.swift; sourceTree = "<group>"; };
+		D0000000000000000000D004 /* Lens.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lens.swift; sourceTree = "<group>"; };
+		D0000000000000000000D005 /* PhotoCapture.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoCapture.swift; sourceTree = "<group>"; };
+		D0000000000000000000D006 /* PhotoCaptureProcessor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoCaptureProcessor.swift; sourceTree = "<group>"; };
+		D0000000000000000000D007 /* ManualControls.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManualControls.swift; sourceTree = "<group>"; };
+		D0000000000000000000D008 /* PhotoLibrary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoLibrary.swift; sourceTree = "<group>"; };
+		D0000000000000000000D009 /* CameraError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraError.swift; sourceTree = "<group>"; };
+		D0000000000000000000D00A /* PreviewView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewView.swift; sourceTree = "<group>"; };
+		D0000000000000000000D00B /* CameraPreview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraPreview.swift; sourceTree = "<group>"; };
+		D0000000000000000000D00C /* CameraModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraModel.swift; sourceTree = "<group>"; };
+		D0000000000000000000D00D /* CameraView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraView.swift; sourceTree = "<group>"; };
+		D0000000000000000000D00E /* LensSelectorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LensSelectorView.swift; sourceTree = "<group>"; };
+		D0000000000000000000D00F /* ManualControlPanel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManualControlPanel.swift; sourceTree = "<group>"; };
+		D0000000000000000000D010 /* ManualControlSlider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManualControlSlider.swift; sourceTree = "<group>"; };
+		D0000000000000000000D011 /* FormatToggleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormatToggleView.swift; sourceTree = "<group>"; };
+		D0000000000000000000D012 /* ShutterButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShutterButton.swift; sourceTree = "<group>"; };
+		D0000000000000000000D013 /* FocusReticle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FocusReticle.swift; sourceTree = "<group>"; };
+		D0000000000000000000D014 /* ThumbnailPreview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThumbnailPreview.swift; sourceTree = "<group>"; };
+		D0000000000000000000D015 /* Settings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
+		D0000000000000000000D016 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		D0000000000000000000D017 /* GridOverlayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridOverlayView.swift; sourceTree = "<group>"; };
+		D0000000000000000000D018 /* LocationProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationProvider.swift; sourceTree = "<group>"; };
+		D0000000000000000000D01C /* ZoomableImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZoomableImageView.swift; sourceTree = "<group>"; };
+		D0000000000000000000D01D /* FlashButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlashButton.swift; sourceTree = "<group>"; };
+		D0000000000000000000D01E /* PhotoPreviewView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoPreviewView.swift; sourceTree = "<group>"; };
+		D0000000000000000000D01F /* View+GlassEffect.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+GlassEffect.swift"; sourceTree = "<group>"; };
+		D0000000000000000000D020 /* CoachMarkOverlay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoachMarkOverlay.swift; sourceTree = "<group>"; };
+		D0000000000000000000D021 /* HDRButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HDRButton.swift; sourceTree = "<group>"; };
+		D0000000000000000000D022 /* DetectedObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetectedObject.swift; sourceTree = "<group>"; };
+		D0000000000000000000D023 /* MetadataHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MetadataHandler.swift; sourceTree = "<group>"; };
+		D0000000000000000000D024 /* DetectionOverlayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetectionOverlayView.swift; sourceTree = "<group>"; };
+		D0000000000000000000D025 /* CameraView+Coach.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CameraView+Coach.swift"; sourceTree = "<group>"; };
+		D0000000000000000000D026 /* CameraView+Controls.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CameraView+Controls.swift"; sourceTree = "<group>"; };
+		D0000000000000000000D027 /* CameraView+Layout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CameraView+Layout.swift"; sourceTree = "<group>"; };
+		D0000000000000000000D028 /* CameraView+Subviews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CameraView+Subviews.swift"; sourceTree = "<group>"; };
+		D0000000000000000000D029 /* CaptureFlyInOverlay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaptureFlyInOverlay.swift; sourceTree = "<group>"; };
+		D0000000000000000000D02A /* AspectRatio.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AspectRatio.swift; sourceTree = "<group>"; };
+		D0000000000000000000D02B /* AspectRatioButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AspectRatioButton.swift; sourceTree = "<group>"; };
+		D0000000000000000000D02C /* AspectRatioMaskView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AspectRatioMaskView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C0000000000000000000C007 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A0000000000000000000A002 = {
+			isa = PBXGroup;
+			children = (
+				A0000000000000000000A005 /* Lumera */,
+				A0000000000000000000A003 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A0000000000000000000A003 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C0000000000000000000C008 /* Lumera.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A0000000000000000000A005 /* Lumera */ = {
+			isa = PBXGroup;
+			children = (
+				A0000000000000000000A006 /* App */,
+				A0000000000000000000A007 /* Camera */,
+				A0000000000000000000A008 /* Preview */,
+				A0000000000000000000A009 /* Model */,
+				A0000000000000000000A00A /* UI */,
+				A0000000000000000000A00B /* Assets.xcassets */,
+				A0000000000000000000A00D /* Localizable.xcstrings */,
+				A0000000000000000000A00E /* InfoPlist.xcstrings */,
+				A0000000000000000000A00F /* PrivacyInfo.xcprivacy */,
+			);
+			path = Lumera;
+			sourceTree = "<group>";
+		};
+		A0000000000000000000A006 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				D0000000000000000000D001 /* LumeraApp.swift */,
+				A0000000000000000000A00C /* Info.plist */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		A0000000000000000000A007 /* Camera */ = {
+			isa = PBXGroup;
+			children = (
+				D0000000000000000000D002 /* CaptureService.swift */,
+				D0000000000000000000D003 /* DeviceLookup.swift */,
+				D0000000000000000000D004 /* Lens.swift */,
+				D0000000000000000000D005 /* PhotoCapture.swift */,
+				D0000000000000000000D006 /* PhotoCaptureProcessor.swift */,
+				D0000000000000000000D007 /* ManualControls.swift */,
+				D0000000000000000000D008 /* PhotoLibrary.swift */,
+				D0000000000000000000D009 /* CameraError.swift */,
+				D0000000000000000000D018 /* LocationProvider.swift */,
+				D0000000000000000000D022 /* DetectedObject.swift */,
+				D0000000000000000000D023 /* MetadataHandler.swift */,
+				D0000000000000000000D02A /* AspectRatio.swift */,
+			);
+			path = Camera;
+			sourceTree = "<group>";
+		};
+		A0000000000000000000A008 /* Preview */ = {
+			isa = PBXGroup;
+			children = (
+				D0000000000000000000D00A /* PreviewView.swift */,
+				D0000000000000000000D00B /* CameraPreview.swift */,
+			);
+			path = Preview;
+			sourceTree = "<group>";
+		};
+		A0000000000000000000A009 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				D0000000000000000000D00C /* CameraModel.swift */,
+				D0000000000000000000D015 /* Settings.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		A0000000000000000000A00A /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				D0000000000000000000D00D /* CameraView.swift */,
+				D0000000000000000000D025 /* CameraView+Coach.swift */,
+				D0000000000000000000D026 /* CameraView+Controls.swift */,
+				D0000000000000000000D027 /* CameraView+Layout.swift */,
+				D0000000000000000000D028 /* CameraView+Subviews.swift */,
+				D0000000000000000000D029 /* CaptureFlyInOverlay.swift */,
+				D0000000000000000000D02B /* AspectRatioButton.swift */,
+				D0000000000000000000D02C /* AspectRatioMaskView.swift */,
+				D0000000000000000000D00E /* LensSelectorView.swift */,
+				D0000000000000000000D00F /* ManualControlPanel.swift */,
+				D0000000000000000000D010 /* ManualControlSlider.swift */,
+				D0000000000000000000D011 /* FormatToggleView.swift */,
+				D0000000000000000000D012 /* ShutterButton.swift */,
+				D0000000000000000000D013 /* FocusReticle.swift */,
+				D0000000000000000000D014 /* ThumbnailPreview.swift */,
+				D0000000000000000000D016 /* SettingsView.swift */,
+				D0000000000000000000D017 /* GridOverlayView.swift */,
+				D0000000000000000000D01C /* ZoomableImageView.swift */,
+				D0000000000000000000D01D /* FlashButton.swift */,
+				D0000000000000000000D01E /* PhotoPreviewView.swift */,
+				D0000000000000000000D01F /* View+GlassEffect.swift */,
+				D0000000000000000000D020 /* CoachMarkOverlay.swift */,
+				D0000000000000000000D021 /* HDRButton.swift */,
+				D0000000000000000000D024 /* DetectionOverlayView.swift */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C0000000000000000000C001 /* Lumera */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C0000000000000000000C002 /* Build configuration list for PBXNativeTarget "Lumera" */;
+			buildPhases = (
+				C0000000000000000000C005 /* Sources */,
+				C0000000000000000000C006 /* Resources */,
+				C0000000000000000000C007 /* Frameworks */,
+				C0000000000000000000C00A /* Set Build Number from git */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Lumera;
+			productName = Lumera;
+			productReference = C0000000000000000000C008 /* Lumera.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A0000000000000000000A001 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1640;
+				LastUpgradeCheck = 2650;
+				TargetAttributes = {
+					C0000000000000000000C001 = {
+						CreatedOnToolsVersion = 16.0;
+					};
+				};
+			};
+			buildConfigurationList = B0000000000000000000B001 /* Build configuration list for PBXProject "Lumera" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+				"zh-Hans",
+			);
+			mainGroup = A0000000000000000000A002;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = A0000000000000000000A003 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C0000000000000000000C001 /* Lumera */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C0000000000000000000C006 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F0000000000000000000F001 /* Assets.xcassets in Resources */,
+				F0000000000000000000F002 /* Localizable.xcstrings in Resources */,
+				F0000000000000000000F003 /* InfoPlist.xcstrings in Resources */,
+				F0000000000000000000F004 /* PrivacyInfo.xcprivacy in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		C0000000000000000000C00A /* Set Build Number from git */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Set Build Number from git";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -e\nCOUNT=$(cd \"$SRCROOT\" && git rev-list --count HEAD 2>/dev/null || echo 1)\nPLIST=\"${TARGET_BUILD_DIR}/${INFOPLIST_PATH}\"\n/usr/libexec/PlistBuddy -c \"Set :CFBundleVersion ${COUNT}\" \"$PLIST\"\necho \"note: CFBundleVersion set to ${COUNT} (git commit count)\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C0000000000000000000C005 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E0000000000000000000E001 /* LumeraApp.swift in Sources */,
+				E0000000000000000000E002 /* CaptureService.swift in Sources */,
+				E0000000000000000000E003 /* DeviceLookup.swift in Sources */,
+				E0000000000000000000E004 /* Lens.swift in Sources */,
+				E0000000000000000000E005 /* PhotoCapture.swift in Sources */,
+				E0000000000000000000E006 /* PhotoCaptureProcessor.swift in Sources */,
+				E0000000000000000000E007 /* ManualControls.swift in Sources */,
+				E0000000000000000000E008 /* PhotoLibrary.swift in Sources */,
+				E0000000000000000000E009 /* CameraError.swift in Sources */,
+				E0000000000000000000E00A /* PreviewView.swift in Sources */,
+				E0000000000000000000E00B /* CameraPreview.swift in Sources */,
+				E0000000000000000000E00C /* CameraModel.swift in Sources */,
+				E0000000000000000000E00D /* CameraView.swift in Sources */,
+				E0000000000000000000E00E /* LensSelectorView.swift in Sources */,
+				E0000000000000000000E00F /* ManualControlPanel.swift in Sources */,
+				E0000000000000000000E010 /* ManualControlSlider.swift in Sources */,
+				E0000000000000000000E011 /* FormatToggleView.swift in Sources */,
+				E0000000000000000000E012 /* ShutterButton.swift in Sources */,
+				E0000000000000000000E013 /* FocusReticle.swift in Sources */,
+				E0000000000000000000E014 /* ThumbnailPreview.swift in Sources */,
+				E0000000000000000000E015 /* Settings.swift in Sources */,
+				E0000000000000000000E016 /* SettingsView.swift in Sources */,
+				E0000000000000000000E017 /* GridOverlayView.swift in Sources */,
+				E0000000000000000000E018 /* LocationProvider.swift in Sources */,
+				E0000000000000000000E01C /* ZoomableImageView.swift in Sources */,
+				E0000000000000000000E01D /* FlashButton.swift in Sources */,
+				E0000000000000000000E01E /* PhotoPreviewView.swift in Sources */,
+				E0000000000000000000E01F /* View+GlassEffect.swift in Sources */,
+				E0000000000000000000E020 /* CoachMarkOverlay.swift in Sources */,
+				E0000000000000000000E021 /* HDRButton.swift in Sources */,
+				E0000000000000000000E022 /* DetectedObject.swift in Sources */,
+				E0000000000000000000E023 /* MetadataHandler.swift in Sources */,
+				E0000000000000000000E024 /* DetectionOverlayView.swift in Sources */,
+				E0000000000000000000E025 /* CameraView+Coach.swift in Sources */,
+				E0000000000000000000E026 /* CameraView+Controls.swift in Sources */,
+				E0000000000000000000E027 /* CameraView+Layout.swift in Sources */,
+				E0000000000000000000E028 /* CameraView+Subviews.swift in Sources */,
+				E0000000000000000000E029 /* CaptureFlyInOverlay.swift in Sources */,
+				E0000000000000000000E02A /* AspectRatio.swift in Sources */,
+				E0000000000000000000E02B /* AspectRatioButton.swift in Sources */,
+				E0000000000000000000E02C /* AspectRatioMaskView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		B0000000000000000000B002 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = 4KJ362VJW5;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		B0000000000000000000B003 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = 4KJ362VJW5;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C0000000000000000000C003 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = Lumera/App/Info.plist;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.photography";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.zhangbob.lumera;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		C0000000000000000000C004 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = Lumera/App/Info.plist;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.photography";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.zhangbob.lumera;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B0000000000000000000B001 /* Build configuration list for PBXProject "Lumera" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B0000000000000000000B002 /* Debug */,
+				B0000000000000000000B003 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C0000000000000000000C002 /* Build configuration list for PBXNativeTarget "Lumera" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C0000000000000000000C003 /* Debug */,
+				C0000000000000000000C004 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A0000000000000000000A001 /* Project object */;
+}
